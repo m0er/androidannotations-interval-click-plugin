@@ -1,0 +1,1 @@
+# androidannotations-custom-plugin
