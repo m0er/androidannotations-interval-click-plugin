@@ -6,7 +6,7 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "me.moer.androidannotationscustomplugin"
+        applicationId "moer.intervalclick"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -24,8 +24,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     apt "org.androidannotations:androidannotations:4.1.0"
     compile 'org.androidannotations:androidannotations-api:4.1.0'
-    apt files('libs/custom-annotations.jar')
-    compile files('libs/custom-annotations-api.jar')
+    apt project(':intervalclick')
+    compile project(':intervalclick-api')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
 }

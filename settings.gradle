@@ -1,1 +1,1 @@
-include ':sample', ':custom-annotations-api', ':custom-annotations'
+include ':intervalclick', ':intervalclick-api', ':sample'
