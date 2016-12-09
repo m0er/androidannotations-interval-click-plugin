@@ -1,2 +1,2 @@
-include ':intervalclick-api', ':intervalclick'
+include ':intervalclick-api', ':intervalclick', ':sample'
 rootProject.name = 'AndroidAnnotations-Interval-Click-Plugin'

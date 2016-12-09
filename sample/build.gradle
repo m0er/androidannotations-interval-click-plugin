@@ -1,15 +1,12 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group = 'com.github.m0er'
 
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "moer.intervalclick"
+        applicationId "moer.intervalclick.sample"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -27,8 +24,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     apt "org.androidannotations:androidannotations:4.1.0"
     compile 'org.androidannotations:androidannotations-api:4.1.0'
-    apt 'com.github.m0er:androidannotations-interval-click-plugin:intervalclick:1.0.0'
-    compile 'com.github.m0er:androidannotations-interval-click-plugin:intervalclick-api:1.0.0'
+    apt project(':intervalclick')
+    compile project(':intervalclick-api')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
 }
