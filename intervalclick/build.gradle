@@ -1,6 +1,7 @@
 apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'moer'
+group = 'com.github.m0er'
 
 targetCompatibility = JavaVersion.VERSION_1_7
 sourceCompatibility = JavaVersion.VERSION_1_7
@@ -18,7 +19,7 @@ sourceSets {
 sourceSets.main.compileClasspath += configurations.provided
 
 dependencies {
-    compile project(':intervalclick-api')
+    compile 'com.github.m0er:androidannotations-interval-click-plugin:intervalclick-api:1.0.0'
     compile "org.androidannotations:androidannotations:4.1.0"
     compile 'com.helger:jcodemodel:2.8.4'
     provided 'com.google.android:android:4.0.1.2'
