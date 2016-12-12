@@ -22,8 +22,8 @@ Add the dependency:
 dependencies {
     apt 'org.androidannotations:androidannotations:4.1.0'
     compile 'org.androidannotations:androidannotations-api:4.1.0'
-    apt 'com.github.m0er.androidannotations-interval-click-plugin:intervalclick:1.0.1'
-    compile 'com.github.m0er.androidannotations-interval-click-plugin:intervalclick-api:1.0.1'
+    apt 'com.github.m0er.androidannotations-interval-click-plugin:intervalclick:1.0.2'
+    compile 'com.github.m0er.androidannotations-interval-click-plugin:intervalclick-api:1.0.2'
 }
 ```
 
